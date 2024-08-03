@@ -42,3 +42,5 @@ arr1[2,2]=9
 #to copy an array
 a=np.array([1,2,3])
 b=a.copy()
+
+https://docs.scipy.org/doc/numpy/reference/routines.math.html
