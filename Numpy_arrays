@@ -42,5 +42,43 @@ arr1[2,2]=9
 #to copy an array
 a=np.array([1,2,3])
 b=a.copy()
+##Linear algebra
+a=np.ones((2,3))
+b=np.full((3,2), 5)
+#print(np.matmul(a,b))
+#print(np.linalg.det(np.matmul(a,b)))
+#Many more linear algebra stuff can be done, visit : https://numpy.org/doc/stable/reference/routines.html
+
+#Statistics
+stat1=np.array([[10,20,30],[230,43,130]])
+#print(stat1)
+#print(np.sum(stat1, axis=0))
+#max,min,sum, etc
+
+#to reshape an array,
+#print(stat1.reshape(3,2))
+#you can also stack arrays
+#vstack
+#print(np.vstack((stat1,stat1)))
+
+
+
+##Boolean masking and advanced indexing
+
+#print ((stat1 > 50)&(stat1 < 200)) #prints true or false
+
+#print(stat1[stat1 > 100]) # prints the elements in the array which are greater that the value
+
+# you can also index with a list
+d=np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15], [16,17,18,19,20], [21,22,23,24,25], [26,27,28,29,30]])
+print(d)
+
+
+print(d[2:4,0:2])
+print(d[[0,4,5], 3:])
+
+e= d[[2]]
+f= d[[3]]
+print(np.vstack((e[:, 0:2],f[:, 0:2])))
 
 https://docs.scipy.org/doc/numpy/reference/routines.math.html
